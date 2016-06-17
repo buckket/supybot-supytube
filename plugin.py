@@ -78,7 +78,7 @@ class Supytube(callbacks.Plugin):
 
                     message = 'Title: %s, Views: %s, Rating: %s' % (ircutils.bold(title), ircutils.bold(views), ircutils.bold(rating))
                     message = message.encode('utf-8', 'replace')
-                    irc.queueMsg(ircmsgs.privmsg(msg.args[0], message))
+                    irc.queueMsg(ircmsgs.notice(msg.args[0], message))
 
 
             if(msg.args[1].find('vimeo') != -1):
@@ -89,7 +89,7 @@ class Supytube(callbacks.Plugin):
                     data = json.loads(r.content)
                     message = 'Title: %s, Views: %s, Likes: %s' % (ircutils.bold(data[0]['title']), ircutils.bold(data[0]['stats_number_of_plays']), ircutils.bold(data[0]['stats_number_of_likes']))
                     message = message.encode('utf-8', 'replace')
-                    irc.queueMsg(ircmsgs.privmsg(msg.args[0], message))
+                    irc.queueMsg(ircmsgs.noticeg(msg.args[0], message))
 
 
 Class = Supytube
