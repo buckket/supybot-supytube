@@ -1,6 +1,6 @@
 ###
 # Copyright (c) 2007, Benjamin Rubin
-# Copyright (c) 2015, buckket
+# Copyright (c) 2015-2016, buckket
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -49,7 +49,7 @@ __author__ = supybot.Author("Benjamin Rubin", "Pici", "bnrubin@gmail.com")
 __contributors__ = {}
 
 # This is a url where the most recent plugin package can be downloaded.
-__url__ = 'https://github.com/buckket/erica'
+__url__ = 'https://github.com/buckket/supybot-supytube'
 
 import config
 import plugin
